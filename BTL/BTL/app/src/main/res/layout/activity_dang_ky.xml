@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKyActivity">
+
+    <TextView
+        android:id="@+id/textViewSDT_DK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="0346245763"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword_DK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSDT_DK"
+        app:layout_constraintStart_toStartOf="@+id/textViewSDT_DK"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSDT_DK" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword_DK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword_DK"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword_DK"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword_DK" />
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:hint="Địa chỉ"
+        app:layout_constraintEnd_toEndOf="@+id/editTextConfirmPassword_DK"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextConfirmPassword_DK"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPassword_DK" />
+
+    <Button
+        android:id="@+id/buttonDK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Đăng kí"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPostalAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress" />
+
+    <FrameLayout
+        android:id="@+id/fragVerify_DK"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDK">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bai_3</string>
+   <string-array name="day">
+       <item>MonDay</item>
+       <item>TuesDay</item>
+       <item>WednesDay</item>
+       <item>ThursDay</item>
+       <item>FirDay</item>
+       <item>Saturday</item>
+       <item>Sunday</item>
+   </string-array>
+</resources>

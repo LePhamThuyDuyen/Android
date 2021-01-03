@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+    <TextView
+        android:id="@+id/textViewName_DP"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:fontFamily="@font/dancingdcript_demidold"
+        android:gravity="center"
+        android:text="Blueberry Cheesecake"
+        android:textColor="#000"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGia_DP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:text="120.000đ"
+        android:textColor="#913"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_DP"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_DP" />
+
+    <ImageView
+        android:id="@+id/imageView_DP"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName_DP"
+        app:srcCompat="@drawable/cheese_cake1" />
+
+    <TextView
+        android:id="@+id/textViewNoteSL_DP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạm hết hàng"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewGia_DP"
+        app:layout_constraintStart_toStartOf="@+id/imageView_DP"
+        app:layout_constraintTop_toTopOf="@+id/textViewGia_DP" />
+
+    <Button
+        android:id="@+id/buttonMua_DP"
+        android:layout_width="229dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/bt"
+        android:gravity="center"
+        android:text="Mua Ngay"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewnote_DP"
+        android:layout_width="315dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="4dp"
+
+        android:text="TextView"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textViewMoTa_DP"
+        android:layout_width="343dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMua_DP"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_DP"
+        app:layout_constraintStart_toStartOf="@+id/imageView_DP"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ghi chú:"
+        android:textColor="#000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_DP"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGia_DP" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mô tả: "
+        android:textColor="#000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="130dp"
+        android:layout_height="187dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="187dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/bt_ran"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:text="Random" />
+
+    <TextView
+        android:id="@+id/tx_kq"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:hint="Ketqua"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_May"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Máy và người" />
+
+    <Button
+        android:id="@+id/bt_tudong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tự động" />
+
+    <Button
+        android:id="@+id/bt_Back"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Thoát" />
+
+
+</LinearLayout>

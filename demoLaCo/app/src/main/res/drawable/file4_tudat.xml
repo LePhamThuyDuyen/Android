@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="false"
+        android:state_pressed="false"
+        android:drawable="@drawable/item_silde"
+       />
+
+    <item
+
+        android:state_pressed="false"
+        android:drawable="@drawable/item_state_pre"
+        />
+
+
+    <item
+        android:state_selected="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/item_state_selec"
+        />
+
+
+
+</selector>

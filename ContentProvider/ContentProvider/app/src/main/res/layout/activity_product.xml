@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductActivity">
+    <Button
+        android:layout_gravity="right"
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter id" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter name" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter unit"/>
+    <EditText
+        android:id="@+id/madein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter made in"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:textAlignment="center" />
+    </LinearLayout>
+  <GridView
+      android:id="@+id/grid"
+      android:numColumns="4"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+</LinearLayout>

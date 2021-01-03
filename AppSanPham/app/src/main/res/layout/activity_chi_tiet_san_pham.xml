@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DanhSachSanPham">
+
+    <TextView
+        android:id="@+id/textViewGia_DP"
+        android:layout_width="116dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="256dp"
+        android:text="00000d"
+        android:textColor="#913"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_DP"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_DP" />
+
+    <ImageView
+        android:id="@+id/imageView_DP"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMua_DP"
+        android:layout_width="229dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Đặt hàng"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMoTa_DP"
+        android:layout_width="343dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMua_DP"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_DP"
+        app:layout_constraintStart_toStartOf="@+id/imageView_DP"
+        app:layout_constraintTop_toBottomOf="@+id/txtten" />
+
+    <TextView
+        android:id="@+id/txtten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô tả: "
+        android:textColor="#000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGia_DP" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGia_DP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_DP"
+        app:layout_constraintVertical_bias="0.433" />
+</androidx.constraintlayout.widget.ConstraintLayout>
